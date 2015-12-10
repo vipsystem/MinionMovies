@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'rubygems-update', '~> 2.1', '>= 2.1.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -15,10 +15,11 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'foundation-rails'
 gem 'devise'
-# Advanced key-value store
-gem 'redis', '~> 3.0.1'
-# Redis driver
-gem 'hiredis', '~> 0.4.5'
+gem "algoliasearch-rails"
+
+group :development do
+  gem "better_errors"
+end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

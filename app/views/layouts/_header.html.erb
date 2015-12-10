@@ -5,7 +5,7 @@
       <li class="name">
         <h1>
           <a href="/">
-            <i class="fi-play-video"></i> MovieStore
+            <img src="http://vignette1.wikia.nocookie.net/despicableme/images/4/4c/Minions-movie-logo.png/revision/latest?cb=20150708052857"> Movies
           </a>
         </h1>
       </li>
@@ -17,11 +17,6 @@
       <!-- Right Nav Section -->
       <ul class="right">
         <%if signed_in?%>
-          <li>
-            <%= link_to cart_path do%>
-              <i class="fi-shopping-cart"></i> My Cart (<span class="cart-count"><%=current_user.cart_count%></span>)
-            <%end%>
-          </li>
           <li><%=link_to current_user.email, edit_user_registration_path%></li>
           <li><%=link_to "Logout", destroy_user_session_path, method: :delete%></li>
         <%else%>
@@ -43,8 +38,6 @@
           </div>
         </li>
       </ul>
-
     </section>
-
   </nav>
 </div>
